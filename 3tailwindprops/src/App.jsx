@@ -7,12 +7,18 @@ import Card from "./components/Card";
 
 function App() {
   const [count, setCount] = useState(0)
+  let myObj = {
+    username: "kaushal",
+    age: 20
+  }
+  let myArr = [1, 2, 3]
 
   return (
     <>
       <h1 className='bg-green-500 text-black p-4 rounded-xl'>Tailwind Test</h1>
-      <Card/>
-      <Card/>
+      {/* <Card channel= "chai" someObj= {myObj} newArr = {myArr} /> */}
+      <Card username = "kaushal" btnTxt= "click me"/>
+      <Card username = "komal" btnTxt= "visit me"/>
     </>
   )
 }
