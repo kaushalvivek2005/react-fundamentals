@@ -12,8 +12,17 @@ function App() {
 
   const addValue = () => {
     if (counter <25){
-      counter = counter + 1
-      setCounter(counter )
+      // counter = counter + 1
+      // setCounter(counter + 1)    //for single update
+      
+      // setCounter(counter = counter + 1)  
+      // it will work for multiple updates but it mutate variable
+      
+      setCounter(counter => counter + 1)    
+      // it is used for multiple updates and it is widely used and it depends on previous state
+      setCounter(counter => counter + 1)
+      setCounter(counter => counter + 1)
+      setCounter(counter => counter + 1)
     }
 
   }
