@@ -20,10 +20,12 @@ function customRender(reactElement, container){
 const reactElement = {
     type: 'a',
     props:{
-        href: 'https://google.com',
+        // href: 'https://google.com',
+        href: 'https://www.youtube.com/',
         target: '_blank'
     },
-    Children: 'Click me to visit google'
+    // Children: 'Click me to visit google'
+     Children: 'Click me to visit youtube'
 }
 
 const mainContainer = document.querySelector('#root')
