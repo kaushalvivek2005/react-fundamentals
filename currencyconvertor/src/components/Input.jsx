@@ -2,7 +2,13 @@ import React from 'react'
 
 function Input({
     label,
-    
+    amount,
+    onAmountChange,
+    onCurrencyChange,
+    currencyOption = [],
+    selectCurrency = "usd",
+    amountDisable = false,
+    currencyDisable = false,
     className = "",
 }) {
    
